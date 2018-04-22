@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+	<h:head>
+		
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"/>
+	
+		<title> JSForm </title>
+		
+		
+	</h:head>
+	
+	<h:body style="background-color: #A5D6A7;">
+		
+		<div class="formContainer">
+		
+			<h1 style="color: white; text-align: center;"> Login </h1>
+		
+			<h:form>
+		
+				<h:panelGrid columns="3">
+			
+					<h:outputLabel value="Email"/>
+					<h:inputText value="#{login.email}"></h:inputText>
+				
+					<br/>
+				
+					<h:outputLabel value="Password"/>
+					<h:inputSecret value="#{login.password}"></h:inputSecret>
+				
+					<br/>
+					<br/>
+			
+					<h:commandLink action="#{login.validateUser}" value="Submit"/>
+					
+					<br/>
+					<br/>
+			
+					<h:commandLink action="registrazione.xhtml" value="Registrati"/>
+				
+				</h:panelGrid>	
+			
+			</h:form>
+		
+		</div>
+		
+	</h:body>
+</html>

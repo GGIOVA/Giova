@@ -1,0 +1,14 @@
+@charset "ISO-8859-1";
+.formContainer{
+	
+	background-color: #E0E0E0;
+	padding: 20px;
+	margin: auto;
+	width: 300px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.formContainerChilds{
+	
+	opacity:100.0;
+}
